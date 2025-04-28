@@ -9,3 +9,12 @@ https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/container
 
 See XXX for how to set up a dual boot workstation where I run Fedora 42 Linux.
 
+.. code:: bash
+
+  docker pull sapse/abap-cloud-developer-trial:ABAPTRIAL_2022_SP01
+
+TODO How to use Docker Desktop. 
+
+| Docker Desktop is a licensed product, and may need paid license, so be sure to be compliant.
+| Docker CLI and various tools are FOSS – still; please observe the licecenses.
+
