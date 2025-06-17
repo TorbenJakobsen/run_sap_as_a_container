@@ -2,13 +2,48 @@
   Run SAP as a Container
 ##########################
 
+I will be using Proxmox as hypervisor.
+
+Proxmox natively suports LXC containers.
+To run Docker containers I will create a container template with needed packages (primarily ``curl`` and ``docker``).
+
+
+Proxmox
+=======
+
+
+Create a container template
+
+Download latest Ubuntu LTS (2404.2-2).
+
+Do the usual post install house keeping chores.
+
+.. code:: bash
+
+  apt update && apt upgrade -y
+
+Needed?
+
+.. code::
+
+  systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
+https://www.tecmint.com/disable-suspend-and-hibernation-in-linux/
+
+As both Ubuntu and RaspberryOS are based on Debian scripts can be quite similar.
+Follow:
+https://raspberrytips.com/docker-compose-raspberry-pi/
+
+.. code::
+
+  apt install curl
+
+SAP
+===
+
 https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-2022-available-now/ba-p/13598069
 
 https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243
-
-See XXX for how to set up a dual boot workstation where I run Fedora 42 Linux.
-
-I will be using Fedora, so installation guides will reflect this.
 
 Installing Docker
 -----------------
@@ -50,7 +85,6 @@ You can verify
 Cite:
 
   ABAP Cloud Developer Trial is a free, downloadable ABAP Platform on SAP HANA 2.0 for trying out the ABAP language and toolset. It is extensively pre-configured with SAP Fiori launchpad, SAP Cloud Connector, pre-configured backend /frontend connections, roles, and sample applications.
-
 
 Docker hub
 ----------
