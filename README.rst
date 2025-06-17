@@ -38,6 +38,55 @@ https://raspberrytips.com/docker-compose-raspberry-pi/
 
   apt install curl
 
+Install Docker
+
+.. code:: bash
+
+  curl -sSL https://get.docker.com | sh
+
+  systemctl status docker
+
+  docker --version
+
+Add user
+--------
+
+Add password and the rest can be blanks
+
+.. code:: bash
+
+  adduser ve
+
+Add to sudo group
+
+.. code:: bash
+
+  adduser ve sudo
+
+.. code:: bash
+
+  adduser ve docker
+
+Verify...
+
+.. code:: bash
+
+  groups ve
+
+Expected result is: :code:`ve : ve sudo users docker`.
+
+Login as :code:`ve` (or use :code:`su`):
+
+.. code:: bash
+
+Disable root account ()
+
+.. code:: bash
+
+  sudo passwd -l root
+
+You will now have to login as :code:`ve` and use :code:`sudo`.
+
 SAP
 ===
 
