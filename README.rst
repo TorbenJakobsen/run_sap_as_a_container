@@ -7,93 +7,11 @@ I will be using Proxmox as hypervisor.
 Proxmox natively suports LXC containers.
 To run Docker containers I will create a container template with needed packages (primarily ``curl`` and ``docker``).
 
-***********
-  Proxmox
-***********
+https://github.com/TorbenJakobsen/run-docker-in-proxmox-lxc-container
 
-Create a container template
-===========================
-
-Select (download) latest Ubuntu LTS (2404.2-2).
-
-Update
-------
-
-Do the usual post-install housekeeping chores.
-
-.. code:: bash
-
-  apt update && apt dist-upgrade -y
-
-Install Docker
---------------
-
-As both Ubuntu and RaspberryOS are based on Debian scripts can be quite similar.
-Follow:
-https://raspberrytips.com/docker-compose-raspberry-pi/
-to install Docker and lean about related useful topics.
-
-#. Install :code:`curl`
-
-.. code:: bash
-
-  apt install curl
-
-#. Install :code:`docker`
-
-.. code:: bash
-
-  curl -sSL https://get.docker.com | sh
-
-#. Verify
-
-.. code:: bash
-
-  systemctl status docker
-
-  docker --version
-
-Add user
---------
-
-Add password and the rest can be blanks (press return multiple times).
-
-.. code:: bash
-
-  adduser ve
-
-Add to sudo group
-
-.. code:: bash
-
-  adduser ve sudo
-
-.. code:: bash
-
-  adduser ve docker
-
-Verify...
-
-.. code:: bash
-
-  groups ve
-
-Expected result is: :code:`ve : ve sudo users docker`.
-
-Login as :code:`ve` (or use :code:`su`):
-
-.. code:: bash
-
-Disable (lock) root account 
-
-.. code:: bash
-
-  sudo passwd -l root
-
-You will now have to login as :code:`ve` and use :code:`sudo`.
-
-SAP
-===
+*******
+  SAP
+*******
 
 https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-2022-available-now/ba-p/13598069
 
