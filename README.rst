@@ -7,14 +7,17 @@ I will be using Proxmox as hypervisor.
 Proxmox natively suports LXC containers.
 To run Docker containers I will create a container template with needed packages (primarily ``curl`` and ``docker``).
 
-
-Proxmox
-=======
+***********
+  Proxmox
+***********
 
 Create a container template
----------------------------
+===========================
 
-Download latest Ubuntu LTS (2404.2-2).
+Select (download) latest Ubuntu LTS (2404.2-2).
+
+Update
+------
 
 Do the usual post-install housekeeping chores.
 
@@ -30,17 +33,21 @@ Follow:
 https://raspberrytips.com/docker-compose-raspberry-pi/
 to install Docker and lean about related useful topics.
 
-Install Curl
+#. Install :code:`curl`
 
 .. code:: bash
 
   apt install curl
 
-Install Docker
+#. Install :code:`docker`
 
 .. code:: bash
 
   curl -sSL https://get.docker.com | sh
+
+#. Verify
+
+.. code:: bash
 
   systemctl status docker
 
