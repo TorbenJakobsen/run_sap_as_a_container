@@ -117,13 +117,13 @@ If you are on a slow connection, you should check your power settings so your wo
 
 .. image:: ./media/docker_pull.png
   :align: left
-  :width: 720 px
+  :width: 700 px
 
 If you see "disk quota exceeded"
 
 .. image:: ./media/disk_quota_exceeded.png
   :align: left
-  :width: 780 px
+  :width: 740 px
 
 This can also be seen in the summary tile:
 
