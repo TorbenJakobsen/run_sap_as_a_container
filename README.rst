@@ -137,6 +137,17 @@ If you see "disk quota exceeded"
 
 .. image:: ./media/disk_quota_exceeded.png
 
+
+.. image:: ./media/ct_tile.png
+
+
+.. image:: ./media/cli_df.png
+
+
+.. code:: bash
+
+  pct resize 100 rootfs 100G
+
 You can verify
 
 
