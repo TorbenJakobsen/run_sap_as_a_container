@@ -159,16 +159,20 @@ You can resize and run again.
 The :code:`docker pull` have used up approximately 54GB
 
 .. image:: ./media/cli_df_after_pull.png
+  :align: left
+  :width: 600 px
 
 You can verify
 
 .. image:: ./media/docker_iamges.png
+  :align: left
+  :width: 600 px
 
 Cite:
 
   ABAP Cloud Developer Trial is a free, downloadable ABAP Platform on SAP HANA 2.0 for trying out the ABAP language and toolset. It is extensively pre-configured with SAP Fiori launchpad, SAP Cloud Connector, pre-configured backend /frontend connections, roles, and sample applications.
 
-Docker hub
+Docker Hub
 ----------
 
 https://hub.docker.com/r/sapse/abap-cloud-developer-trial
