@@ -70,9 +70,9 @@ You can verify
   :align: left
   :width: 800 px
 
-.. image:: ./media/docker_system_df
+.. image:: ./media/docker_system_df.png
   :align: left
-  :width: 600 px
+  :width: 640 px
 
 Cite:
 
