@@ -11,8 +11,8 @@ To run Docker containers I will create a container template with needed packages
 Proxmox
 =======
 
-
 Create a container template
+---------------------------
 
 Download latest Ubuntu LTS (2404.2-2).
 
@@ -21,14 +21,6 @@ Do the usual post-install housekeeping chores.
 .. code:: bash
 
   apt update && apt dist-upgrade -y
-
-Very much optional and probably not really needed as a server is expected to never try to sleep.
-
-.. code::
-
-  systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
-
-https://www.tecmint.com/disable-suspend-and-hibernation-in-linux/
 
 Install Docker
 --------------
@@ -40,7 +32,7 @@ to install Docker and lean about related useful topics.
 
 Install Curl
 
-.. code::
+.. code:: bash
 
   apt install curl
 
@@ -53,15 +45,6 @@ Install Docker
   systemctl status docker
 
   docker --version
-
-Docker Desktop 
---------------
-
-Notes:
-
-#. Docker Desktop is a *licensed* product, and is *not* IBM compliant.
-#. Docker CLI and various tools are FOSS -- still; please observe the licenses.
-#. I will only use Docker CLI as it gives me the most freedom and options (and... it is the only option while inside a container).
 
 Add user
 --------
@@ -170,9 +153,24 @@ Docker Hub
 
 https://hub.docker.com/r/sapse/abap-cloud-developer-trial
 
-Requirements from SAP
+Requirements
+------------
 
-32GB for image
-16GB for Docker itself
+Requirements from SAP:
+
+- 32GB for image
+- 16GB for Docker itself
 
 These are not enough
+
+*********
+  Notes
+*********
+
+Docker Desktop 
+==============
+
+#. Docker Desktop is a *licensed* product, and is *not* IBM compliant.
+#. Docker CLI and various tools are FOSS -- still; please observe the licenses.
+#. I will only use Docker CLI as it gives me the most freedom and options (and... it is the only option while inside a container).
+
