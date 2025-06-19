@@ -133,18 +133,22 @@ This will take a *long* while as it will download ~56GB.
 If you are on a slow connection, you should check your power settings so your workstation does not go to hibernate mode.
 
 .. image:: ./media/docker_pull.png
+  :align: left
+  :width: 800 px
 
 If you see "disk quota exceeded"
 
 .. image:: ./media/disk_quota_exceeded.png
   :align: left
-  :width: 640 px
+  :width: 800 px
 
 .. image:: ./media/ct_tile.png
   :align: left
-  :width: 420 px
+  :width: 600 px
 
 .. image:: ./media/cli_df.png
+  :align: left
+  :width: 600 px
 
 You can resize and run again.
 
