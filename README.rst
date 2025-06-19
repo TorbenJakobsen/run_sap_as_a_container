@@ -129,16 +129,16 @@ Downloading Docker image
 
 Note: You need to include a tag as :code:`:latest` is not supported.
 
-| This will take a *long* while as it will download ????
-| You should check your power settings so your workstation does not go to hibernate mode.
-|
+This will take a *long* while as it will download ~56GB.
+If you are on a slow connection, you should check your power settings so your workstation does not go to hibernate mode.
 
 .. image:: ./media/docker_pull.png
 
 If you see "disk quota exceeded"
 
 .. image:: ./media/disk_quota_exceeded.png
-
+  :align: left
+  :width: 640 px
 
 .. image:: ./media/ct_tile.png
   :align: left
