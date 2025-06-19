@@ -30,10 +30,15 @@ Very much optional and probably not really needed as a server is expected to nev
 
 https://www.tecmint.com/disable-suspend-and-hibernation-in-linux/
 
+Install Docker
+--------------
+
 As both Ubuntu and RaspberryOS are based on Debian scripts can be quite similar.
 Follow:
 https://raspberrytips.com/docker-compose-raspberry-pi/
 to install Docker and lean about related useful topics.
+
+Install Curl
 
 .. code::
 
@@ -48,6 +53,15 @@ Install Docker
   systemctl status docker
 
   docker --version
+
+Docker Desktop 
+--------------
+
+Notes:
+
+#. Docker Desktop is a *licensed* product, and is *not* IBM compliant.
+#. Docker CLI and various tools are FOSS -- still; please observe the licenses.
+#. I will only use Docker CLI as it gives me the most freedom and options (and... it is the only option while inside a container).
 
 Add user
 --------
@@ -96,12 +110,6 @@ https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-
 https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243
 
 
-Docker Desktop 
---------------
-
-#. Docker Desktop is a *licensed* product, and is *not* IBM compliant.
-#. Docker CLI and various tools are FOSS -- still; please observe the licenses.
-#. I will only use Docker CLI as it gives me the most freedom and options (and... it is the only option while inside a container).
 
 Downloading Docker image
 ------------------------
