@@ -109,18 +109,19 @@ Verify installation:
 
   docker
 
-Expected result is:: 
+Expected result is a manual page.
 
 
 How to use Docker Desktop 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-| Docker Desktop is a licensed product, and is not IBM compliant.
+| Docker Desktop is a *licensed* product, and is *not* IBM compliant.
 | Docker CLI and various tools are FOSS -- still; please observe the licenses.
-| I will only use Docker CLI as it gives me the most freedom and options.
+| I will only use Docker CLI as it gives me the most freedom and options (and... it is the only option while inside a container).
+|
 
-Downloading image
------------------
+Downloading Docker image
+------------------------
 
 .. code:: bash
 
@@ -141,7 +142,7 @@ If you see "disk quota exceeded"
 
 .. image:: ./media/ct_tile.png
   :align: left
-  :width: 600 px
+  :width: 420 px
 
 .. image:: ./media/cli_df.png
 
@@ -155,9 +156,9 @@ The :code:`docker pull` have used up approximately 54GB
 
 .. image:: ./media/cli_df_after_pull.png
 
-
 You can verify
 
+.. image:: ./media/docker_iamges.png
 
 Cite:
 
