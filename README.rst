@@ -46,9 +46,11 @@ This can also be seen in the summary tile:
   :align: left
   :width: 460 px
 
+And be verified in the filesystem.
+
 .. image:: ./media/cli_df.png
   :align: left
-  :width: 600 px
+  :width: 580 px
 
 You can resize and run again.
 
@@ -67,6 +69,10 @@ You can verify
 .. image:: ./media/docker_images.png
   :align: left
   :width: 800 px
+
+.. image:: ./media/docker_system_df
+  :align: left
+  :width: 600 px
 
 Cite:
 
