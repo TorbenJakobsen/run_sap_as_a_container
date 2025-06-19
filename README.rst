@@ -79,7 +79,7 @@ Login as :code:`ve` (or use :code:`su`):
 
 .. code:: bash
 
-Disable root account ()
+Disable (lock) root account 
 
 .. code:: bash
 
@@ -109,6 +109,9 @@ Verify installation:
 
   docker
 
+Expected result is:: 
+
+
 How to use Docker Desktop 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -127,6 +130,12 @@ Note: You need to include a tag as :code:`:latest` is not supported.
 
 | This will take a *long* while as it will download ????
 | You should check your power settings so your workstation does not go to hibernate mode.
+
+.. image:: ./media/docker_pull.png
+
+If you see "disk quota exceeded"
+
+.. image:: ./media/disk_quota_exceeded.png
 
 You can verify
 
