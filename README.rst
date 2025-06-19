@@ -143,10 +143,16 @@ If you see "disk quota exceeded"
 
 .. image:: ./media/cli_df.png
 
+You can resize and run again.
 
 .. code:: bash
 
   pct resize 100 rootfs 100G
+
+The :code:`docker pull` have used up approximately 54GB
+
+.. image:: ./media/cli_df_after_pull.png
+
 
 You can verify
 
