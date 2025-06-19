@@ -20,7 +20,7 @@ https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/container
 
 
 Downloading Docker image
-------------------------
+========================
 
 .. code:: bash
 
@@ -74,12 +74,12 @@ Cite:
   ABAP Cloud Developer Trial is a free, downloadable ABAP Platform on SAP HANA 2.0 for trying out the ABAP language and toolset. It is extensively pre-configured with SAP Fiori launchpad, SAP Cloud Connector, pre-configured backend /frontend connections, roles, and sample applications.
 
 Docker Hub
-----------
+==========
 
 https://hub.docker.com/r/sapse/abap-cloud-developer-trial
 
 Requirements
-------------
+============
 
 Requirements from SAP:
 
