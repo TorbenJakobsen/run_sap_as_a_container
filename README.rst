@@ -115,10 +115,9 @@ Expected result is a manual page.
 How to use Docker Desktop 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-| Docker Desktop is a *licensed* product, and is *not* IBM compliant.
-| Docker CLI and various tools are FOSS -- still; please observe the licenses.
-| I will only use Docker CLI as it gives me the most freedom and options (and... it is the only option while inside a container).
-|
+#. Docker Desktop is a *licensed* product, and is *not* IBM compliant.
+#. Docker CLI and various tools are FOSS -- still; please observe the licenses.
+#. I will only use Docker CLI as it gives me the most freedom and options (and... it is the only option while inside a container).
 
 Downloading Docker image
 ------------------------
@@ -134,17 +133,19 @@ If you are on a slow connection, you should check your power settings so your wo
 
 .. image:: ./media/docker_pull.png
   :align: left
-  :width: 800 px
+  :width: 720 px
 
 If you see "disk quota exceeded"
 
 .. image:: ./media/disk_quota_exceeded.png
   :align: left
-  :width: 720 px
+  :width: 780 px
+
+This can also be seen in the summary tile:
 
 .. image:: ./media/ct_tile.png
   :align: left
-  :width: 480 px
+  :width: 420 px
 
 .. image:: ./media/cli_df.png
   :align: left
