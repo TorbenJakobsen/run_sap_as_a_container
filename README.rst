@@ -133,7 +133,7 @@ This can also be seen in the summary tile:
 
 .. image:: ./media/cli_df.png
   :align: left
-  :width: 540 px
+  :width: 600 px
 
 You can resize and run again.
 
@@ -145,7 +145,7 @@ The :code:`docker pull` have used up approximately 54GB
 
 .. image:: ./media/cli_df_after_pull.png
   :align: left
-  :width: 540 px
+  :width: 560 px
 
 You can verify
 
