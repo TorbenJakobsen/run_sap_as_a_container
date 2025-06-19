@@ -74,7 +74,7 @@ And used resources more generally
 
 .. image:: ./media/docker_system_df.png
   :align: left
-  :width: 540 px
+  :width: 500 px
 
 Cite:
 
@@ -93,7 +93,7 @@ Requirements from SAP:
 - 32GB for image
 - 16GB for Docker itself
 
-These are not enough
+This is not enough, as just the downloaded image takes up 58GB.
 
 *********
   Notes
