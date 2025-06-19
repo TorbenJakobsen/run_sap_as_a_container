@@ -52,7 +52,7 @@ Install Docker
 Add user
 --------
 
-Add password and the rest can be blanks
+Add password and the rest can be blanks (press return multiple times).
 
 .. code:: bash
 
@@ -146,11 +146,11 @@ This can also be seen in the summary tile:
 
 .. image:: ./media/ct_tile.png
   :align: left
-  :width: 420 px
+  :width: 460 px
 
 .. image:: ./media/cli_df.png
   :align: left
-  :width: 640 px
+  :width: 480 px
 
 You can resize and run again.
 
@@ -162,13 +162,13 @@ The :code:`docker pull` have used up approximately 54GB
 
 .. image:: ./media/cli_df_after_pull.png
   :align: left
-  :width: 640 px
+  :width: 480 px
 
 You can verify
 
 .. image:: ./media/docker_images.png
   :align: left
-  :width: 640 px
+  :width: 720 px
 
 Cite:
 
