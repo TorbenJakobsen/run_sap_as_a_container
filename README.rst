@@ -95,26 +95,9 @@ https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-
 
 https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243
 
-Installing Docker
------------------
 
-Follow the steps in: 
-https://docs.docker.com/engine/install/fedora/
-
-The general installation guide is here:
-https://docs.docker.com/engine/install/
-
-Verify installation:
-
-.. code:: bash
-
-  docker
-
-Expected result is a manual page.
-
-
-How to use Docker Desktop 
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Docker Desktop 
+--------------
 
 #. Docker Desktop is a *licensed* product, and is *not* IBM compliant.
 #. Docker CLI and various tools are FOSS -- still; please observe the licenses.
@@ -150,7 +133,7 @@ This can also be seen in the summary tile:
 
 .. image:: ./media/cli_df.png
   :align: left
-  :width: 480 px
+  :width: 540 px
 
 You can resize and run again.
 
@@ -162,13 +145,13 @@ The :code:`docker pull` have used up approximately 54GB
 
 .. image:: ./media/cli_df_after_pull.png
   :align: left
-  :width: 480 px
+  :width: 540 px
 
 You can verify
 
 .. image:: ./media/docker_images.png
   :align: left
-  :width: 720 px
+  :width: 800 px
 
 Cite:
 
