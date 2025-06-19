@@ -140,7 +140,7 @@ If you see "disk quota exceeded"
 
 .. image:: ./media/disk_quota_exceeded.png
   :align: left
-  :width: 760 px
+  :width: 720 px
 
 .. image:: ./media/ct_tile.png
   :align: left
@@ -164,7 +164,7 @@ The :code:`docker pull` have used up approximately 54GB
 
 You can verify
 
-.. image:: ./media/docker_iamges.png
+.. image:: ./media/docker_images.png
   :align: left
   :width: 640 px
 
@@ -177,7 +177,9 @@ Docker Hub
 
 https://hub.docker.com/r/sapse/abap-cloud-developer-trial
 
-Requirements
+Requirements from SAP
 
 32GB for image
 16GB for Docker itself
+
+These are not enough
