@@ -140,15 +140,15 @@ If you see "disk quota exceeded"
 
 .. image:: ./media/disk_quota_exceeded.png
   :align: left
-  :width: 800 px
+  :width: 760 px
 
 .. image:: ./media/ct_tile.png
   :align: left
-  :width: 600 px
+  :width: 480 px
 
 .. image:: ./media/cli_df.png
   :align: left
-  :width: 600 px
+  :width: 640 px
 
 You can resize and run again.
 
@@ -160,13 +160,13 @@ The :code:`docker pull` have used up approximately 54GB
 
 .. image:: ./media/cli_df_after_pull.png
   :align: left
-  :width: 600 px
+  :width: 640 px
 
 You can verify
 
 .. image:: ./media/docker_iamges.png
   :align: left
-  :width: 600 px
+  :width: 640 px
 
 Cite:
 
