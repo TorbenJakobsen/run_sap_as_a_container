@@ -16,13 +16,13 @@ Create a container template
 
 Download latest Ubuntu LTS (2404.2-2).
 
-Do the usual post install house keeping chores.
+Do the usual post-install housekeeping chores.
 
 .. code:: bash
 
-  apt update && apt upgrade -y
+  apt update && apt dist-upgrade -y
 
-Needed?
+Very much optional and probably not really needed as a server is expected to never try to sleep.
 
 .. code::
 
@@ -33,6 +33,7 @@ https://www.tecmint.com/disable-suspend-and-hibernation-in-linux/
 As both Ubuntu and RaspberryOS are based on Debian scripts can be quite similar.
 Follow:
 https://raspberrytips.com/docker-compose-raspberry-pi/
+to install Docker and lean about related useful topics.
 
 .. code::
 
