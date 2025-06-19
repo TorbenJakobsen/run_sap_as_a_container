@@ -18,8 +18,7 @@ https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-
 https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243
 
 
-
-Downloading Docker image
+Downloading Docker Image
 ========================
 
 .. code:: bash
