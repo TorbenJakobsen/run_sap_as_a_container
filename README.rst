@@ -70,9 +70,11 @@ You can verify
   :align: left
   :width: 800 px
 
+And used resources more generally
+
 .. image:: ./media/docker_system_df.png
   :align: left
-  :width: 640 px
+  :width: 540 px
 
 Cite:
 
