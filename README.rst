@@ -13,21 +13,19 @@ https://github.com/TorbenJakobsen/run-docker-in-proxmox-lxc-container
   SAP
 *******
 
-https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-2022-available-now/ba-p/13598069
+- https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-2022-available-now/ba-p/13598069
+- https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243
 
-https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243
-
-
-Downloading Docker Image
-========================
+Download Docker Image
+=====================
 
 .. code:: bash
 
   sudo docker pull sapse/abap-cloud-developer-trial:ABAPTRIAL_2022_SP01
 
-Note: You need to include a tag as :code:`:latest` is not supported.
+Note: You *must* include a tag as :code:`:latest` is not supported.
 
-This will take a *long* while as it will download ~56GB.
+This will take a *long* time as the pull will download and extract ~58GB.
 If you are on a slow connection, you should check your power settings so your workstation does not go to hibernate mode.
 
 .. image:: ./media/docker_pull.png
@@ -58,7 +56,7 @@ You can resize and run again.
 
   pct resize 100 rootfs 100G
 
-The :code:`docker pull` have used up approximately 54GB
+The :code:`docker pull` have used up approximately 54GB disk space.
 
 .. image:: ./media/cli_df_after_pull.png
   :align: left
@@ -78,11 +76,12 @@ And used resources more generally
 
 Cite:
 
-  ABAP Cloud Developer Trial is a free, downloadable ABAP Platform on SAP HANA 2.0 for trying out the ABAP language and toolset. It is extensively pre-configured with SAP Fiori launchpad, SAP Cloud Connector, pre-configured backend /frontend connections, roles, and sample applications.
+  ABAP Cloud Developer Trial is a free, downloadable ABAP Platform on SAP HANA 2.0 
+  for trying out the ABAP language and toolset. 
+  It is extensively pre-configured with SAP Fiori launchpad, SAP Cloud Connector, 
+  pre-configured backend /frontend connections, roles, and sample applications.
 
-Docker Hub
-==========
-
+Docker Hub has documentation:
 https://hub.docker.com/r/sapse/abap-cloud-developer-trial
 
 Requirements
