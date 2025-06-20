@@ -2,7 +2,7 @@
   Run SAP as a Container
 ##########################
 
-I will be using Proxmox as hypervisor.
+I will be using `Proxmox VE <https://www.proxmox.com/>`__ as hypervisor.
 
 Proxmox natively supports LXC containers (*not* Docker).
 To run Docker containers I will use a container *template* with needed packages (``curl`` and ``docker``).
