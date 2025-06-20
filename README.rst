@@ -87,12 +87,10 @@ https://hub.docker.com/r/sapse/abap-cloud-developer-trial
 Requirements
 ============
 
-Requirements from SAP:
+RAM requirements from SAP:
 
 - 32GB for image
 - 16GB for Docker itself
-
-This is not enough, as just the downloaded image takes up 58GB.
 
 *********
   Notes
