@@ -58,7 +58,21 @@ Linux
 - 16GB RAM
 - 150GB Disk
 
-The documentation also mentions macOS requirement.
+The documentation also mentions macOS requirements.
+
+LXC Container
+=============
+
+The container has been created with:
+
+- 6 CPUs
+- 48GB RAM
+- 8GB Swap
+- 200GB Disk
+
+.. image:: ./media/lxc_container_size.png
+  :align: left
+  :width: 460 px
 
 **********
   Docker
