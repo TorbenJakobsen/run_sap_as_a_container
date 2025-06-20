@@ -29,20 +29,16 @@ The SAP container and setup is documented here:
 - `ABAP Cloud Developer Trial 2022 Available Now <https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-2022-available-now/ba-p/13598069>`__
 - `Containerizing SAP S/4HANA Systems with Docker <https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243>`__
 
-.. note::
-
-  The SAP Docker image is Intel based and community supported.
-  If you are using a M-series Apple processor you must use an emulator: 
-  `M-series Apple Chip MacBooks and Abap Platform Trial containers using Docker and Podman <https://community.sap.com/t5/technology-blog-posts-by-members/m-series-apple-chip-macbooks-and-abap-platform-trial-containers-using/ba-p/13593215>`__.
-  More documentation can be found on `Docker Hub <https://hub.docker.com/r/sapse/abap-cloud-developer-trial>`__
+The SAP Docker image is Intel based and community supported.
+If you are using a M-series Apple processor you must use an emulator: 
+`M-series Apple Chip MacBooks and Abap Platform Trial containers using Docker and Podman <https://community.sap.com/t5/technology-blog-posts-by-members/m-series-apple-chip-macbooks-and-abap-platform-trial-containers-using/ba-p/13593215>`__.
+More documentation can be found on `Docker Hub <https://hub.docker.com/r/sapse/abap-cloud-developer-trial>`__.
 
 **********
   Docker
 **********
-
-.. note::
-  
-  Everything related to Docker will be accesed through the CLI.
+ 
+Everything related to Docker will be accesed through the CLI.
 
 Download SAP Image
 =====================
