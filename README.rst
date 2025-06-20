@@ -2,7 +2,7 @@
   Run SAP as a Container
 ##########################
 
-The main compoenents are:
+The main components are:
 
 - Proxmox LXC Container
 - Docker CLI and runtime
