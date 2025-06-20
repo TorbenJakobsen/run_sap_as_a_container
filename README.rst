@@ -2,6 +2,12 @@
   Run SAP as a Container
 ##########################
 
+The main compoenents are:
+
+- Proxmox LXC Container
+- Docker
+- SAP Docker Image
+
 ***********
   Proxmox
 ***********
