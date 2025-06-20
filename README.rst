@@ -24,6 +24,9 @@ with needed packages (``curl`` and ``docker``).
   SAP
 *******
 
+About
+=====
+
   ABAP Cloud Developer Trial is a free, downloadable ABAP Platform on SAP HANA 2.0 
   for trying out the ABAP language and toolset. 
   It is extensively pre-configured with SAP Fiori launchpad, SAP Cloud Connector, 
@@ -38,6 +41,24 @@ The SAP Docker image is Intel based and community supported.
 If you are using a M-series Apple processor you must use an emulator: 
 `M-series Apple Chip MacBooks and Abap Platform Trial containers using Docker and Podman <https://community.sap.com/t5/technology-blog-posts-by-members/m-series-apple-chip-macbooks-and-abap-platform-trial-containers-using/ba-p/13593215>`__.
 More documentation can be found on `Docker Hub <https://hub.docker.com/r/sapse/abap-cloud-developer-trial>`__.
+
+Requirements
+============
+
+From Docker Hub:
+`sapse/abap-cloud-developer-trial <https://hub.docker.com/r/sapse/abap-cloud-developer-trial>`__. 
+
+Please note: We highly recommend 32GB RAM to run the ABAP Platform Trial image. 
+The following requirements only cover the resources needed for the Docker environment itself.
+
+Linux
+-----
+
+- 4 CPUs
+- 16GB RAM
+- 150GB Disk
+
+The documentation also mentions macOS requirement.
 
 **********
   Docker
@@ -107,24 +128,6 @@ And used resources more generally
   :align: left
   :width: 500 px
 
-
-Requirements
-============
-
-From Docker Hub:
-`sapse/abap-cloud-developer-trial <https://hub.docker.com/r/sapse/abap-cloud-developer-trial>`__. 
-
-Please note: We highly recommend 32GB RAM to run the ABAP Platform Trial image. 
-The following requirements only cover the resources needed for the Docker environment itself.
-
-Linux
------
-
-- 4 CPUs
-- 16GB RAM
-- 150GB Disk
-
-The documentation also mentions macOS requirement.
 
 *********
   Notes
