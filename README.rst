@@ -80,7 +80,7 @@ The following screenshot is after the Docker image was pulled.
   Docker
 **********
  
-Everything related to Docker will be accesed through the CLI.
+Everything related to Docker will be accessed through the CLI.
 
 Download SAP Image
 =====================
