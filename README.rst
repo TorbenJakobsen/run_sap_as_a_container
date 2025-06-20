@@ -2,6 +2,10 @@
   Run SAP as a Container
 ##########################
 
+****************
+  Introduction
+****************
+
 I will be using `Proxmox VE <https://www.proxmox.com/>`__ as hypervisor.
 
 Proxmox natively supports LXC containers (*not* Docker).
@@ -19,6 +23,8 @@ with needed packages (``curl`` and ``docker``).
 *******
   SAP
 *******
+
+The SAP container and setup is documented here:
 
 - `ABAP Cloud Developer Trial 2022 Available Now <https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-2022-available-now/ba-p/13598069>`__
 - `Containerizing SAP S/4HANA Systems with Docker <https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243>`__
