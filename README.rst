@@ -11,9 +11,10 @@ To run Docker containers I will use a
 with needed packages (``curl`` and ``docker``).
 
 .. note::
-  The SAP image is Intel based and community supported.
+  The SAP Docker image is Intel based and community supported.
   If you are using a M-series Apple processor you must use an emulator: 
   `M-series Apple Chip MacBooks and Abap Platform Trial containers using Docker and Podman <https://community.sap.com/t5/technology-blog-posts-by-members/m-series-apple-chip-macbooks-and-abap-platform-trial-containers-using/ba-p/13593215>`__.
+  More documentation can be found on `Docker Hub <https://hub.docker.com/r/sapse/abap-cloud-developer-trial>`__
 
 *******
   SAP
