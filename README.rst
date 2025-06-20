@@ -74,7 +74,7 @@ The following screenshot is after the Docker image was pulled.
 
 .. image:: ./media/lxc_container_size.png
   :align: left
-  :width: 360 px
+  :width: 380 px
 
 **********
   Docker
@@ -99,7 +99,7 @@ so your workstation does not risk going to hibernate mode due to inaction.
   :align: left
   :width: 700 px
 
-If you see "disk quota exceeded"
+If you see "disk quota exceeded" (here the LXC container was not resized from 8GB to 200GB).
 
 .. image:: ./media/disk_quota_exceeded.png
   :align: left
