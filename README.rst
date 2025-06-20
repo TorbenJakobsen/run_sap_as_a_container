@@ -72,7 +72,7 @@ The container has been created with:
 
 .. image:: ./media/lxc_container_size.png
   :align: left
-  :width: 460 px
+  :width: 400 px
 
 **********
   Docker
