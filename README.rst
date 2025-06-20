@@ -24,6 +24,11 @@ with needed packages (``curl`` and ``docker``).
   SAP
 *******
 
+  ABAP Cloud Developer Trial is a free, downloadable ABAP Platform on SAP HANA 2.0 
+  for trying out the ABAP language and toolset. 
+  It is extensively pre-configured with SAP Fiori launchpad, SAP Cloud Connector, 
+  pre-configured backend /frontend connections, roles, and sample applications.
+
 The SAP container and setup is documented here:
 
 - `ABAP Cloud Developer Trial 2022 Available Now <https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-2022-available-now/ba-p/13598069>`__
@@ -81,10 +86,8 @@ You can resize and run the :code:`docker pull` again.
 
   pct resize 100 rootfs 100G
 
-.. note::
-
-  The SAP recommendation for the contaimer is minimum 150GB, 
-  and you can resize while the container is running.
+The SAP recommendation for the contaimer is minimum 150GB, 
+and you can resize while the container is running.
 
 The :code:`docker pull` have used up approximately 54GB disk space.
 
@@ -104,12 +107,6 @@ And used resources more generally
   :align: left
   :width: 500 px
 
-Cite:
-
-  ABAP Cloud Developer Trial is a free, downloadable ABAP Platform on SAP HANA 2.0 
-  for trying out the ABAP language and toolset. 
-  It is extensively pre-configured with SAP Fiori launchpad, SAP Cloud Connector, 
-  pre-configured backend /frontend connections, roles, and sample applications.
 
 Requirements
 ============
@@ -123,9 +120,9 @@ The following requirements only cover the resources needed for the Docker enviro
 Linux
 -----
 
-  - 4 CPUs
-  - 16GB RAM
-  - 150GB Disk
+- 4 CPUs
+- 16GB RAM
+- 150GB Disk
 
 The documentation also mentions macOS requirement.
 
