@@ -50,10 +50,10 @@ Download SAP Image
 .. code:: bash
 
   sudo docker pull sapse/abap-cloud-developer-trial:ABAPTRIAL_2022_SP01
+ 
+You *must* include a tag as :code:`:latest` is not supported.
 
-Note: You *must* include a tag as :code:`:latest` is not supported.
-
-This can take a *long* time as the pull will download and extract ~58GB.
+This can take a *long* time as the :code:`docker pull` will download and extract ~58GB.
 If you are on a slow connection, you should check your power settings,
 so your workstation does not risk going to hibernate mode due to inaction.
 
