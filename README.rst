@@ -105,13 +105,13 @@ If you see "disk quota exceeded" (here the LXC container was not resized from 8G
   :align: left
   :width: 740 px
 
-This can also be seen in the summary tile:
+This can be seen in the summary tile:
 
 .. image:: ./media/ct_tile.png
   :align: left
   :width: 460 px
 
-And be verified in the filesystem.
+And also be seen in the filesystem.
 
 .. image:: ./media/cli_df.png
   :align: left
@@ -138,7 +138,7 @@ You can verify
   :align: left
   :width: 800 px
 
-And used resources more generally
+And used Docker system resources more generally
 
 .. image:: ./media/docker_system_df.png
   :align: left
