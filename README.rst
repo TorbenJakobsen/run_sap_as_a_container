@@ -4,17 +4,22 @@
 
 I will be using Proxmox as hypervisor.
 
-Proxmox natively suports LXC containers.
-To run Docker containers I will create a container template with needed packages (primarily ``curl`` and ``docker``).
+Proxmox natively supports LXC containers (*not* Docker).
+To run Docker containers I will use a container *template* with needed packages (``curl`` and ``docker``).
+See: 
+`Run Docker in Proxmox LXC Container <https://github.com/TorbenJakobsen/run-docker-in-proxmox-lxc-container>`__.
 
-https://github.com/TorbenJakobsen/run-docker-in-proxmox-lxc-container
+.. note::
+  The SAP image is Intel based community supprted.
+  If you are using a M-series Apple processor you must use an emulator: 
+  `M-series Apple Chip MacBooks and Abap Platform Trial containers using Docker and Podman <https://community.sap.com/t5/technology-blog-posts-by-members/m-series-apple-chip-macbooks-and-abap-platform-trial-containers-using/ba-p/13593215>`__.
 
 *******
   SAP
 *******
 
-- https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-2022-available-now/ba-p/13598069
-- https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243
+- `ABAP Cloud Developer Trial 2022 Available Now <https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-2022-available-now/ba-p/13598069>`__
+- `Containerizing SAP S/4HANA Systems with Docker <https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243>`__
 
 Download Docker Image
 =====================
@@ -25,8 +30,9 @@ Download Docker Image
 
 Note: You *must* include a tag as :code:`:latest` is not supported.
 
-This will take a *long* time as the pull will download and extract ~58GB.
-If you are on a slow connection, you should check your power settings so your workstation does not go to hibernate mode.
+This can take a *long* time as the pull will download and extract ~58GB.
+If you are on a slow connection, you should check your power settings,
+so your workstation does not risk going to hibernate mode due to inaction.
 
 .. image:: ./media/docker_pull.png
   :align: left
@@ -81,16 +87,23 @@ Cite:
   It is extensively pre-configured with SAP Fiori launchpad, SAP Cloud Connector, 
   pre-configured backend /frontend connections, roles, and sample applications.
 
-Docker Hub has documentation:
-https://hub.docker.com/r/sapse/abap-cloud-developer-trial
-
 Requirements
 ============
 
-RAM requirements from SAP:
+From Docker Hub:
+`sapse/abap-cloud-developer-trial <https://hub.docker.com/r/sapse/abap-cloud-developer-trial>`__. 
 
-- 32GB for image
-- 16GB for Docker itself
+Please note: We highly recommend 32GB RAM to run the ABAP Platform Trial image. 
+The following requirements only cover the resources needed for the Docker environment itself.
+
+Linux
+-----
+
+  - 4 CPUs
+  - 16GB RAM
+  - 150GB Disk
+
+The documentation also mentions macOS requirement.
 
 *********
   Notes
