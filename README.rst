@@ -5,9 +5,10 @@
 I will be using `Proxmox VE <https://www.proxmox.com/>`__ as hypervisor.
 
 Proxmox natively supports LXC containers (*not* Docker).
-To run Docker containers I will use a container *template* with needed packages (``curl`` and ``docker``).
-See: 
-`Run Docker in Proxmox LXC Container <https://github.com/TorbenJakobsen/run-docker-in-proxmox-lxc-container>`__.
+To run Docker containers I will use a 
+`container <https://github.com/TorbenJakobsen/run-docker-in-proxmox-lxc-container>`__
+*template* 
+with needed packages (``curl`` and ``docker``).
 
 .. note::
   The SAP image is Intel based community supprted.
