@@ -70,9 +70,11 @@ The container has been created with:
 - 8GB Swap
 - 200GB Disk
 
+The following screenshot is after the Docker image was pulled.
+
 .. image:: ./media/lxc_container_size.png
   :align: left
-  :width: 400 px
+  :width: 360 px
 
 **********
   Docker
