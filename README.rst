@@ -5,7 +5,7 @@
 The main compoenents are:
 
 - Proxmox LXC Container
-- Docker
+- Docker CLI and runtime
 - SAP Docker Image
 
 ***********
@@ -30,6 +30,7 @@ The SAP container and setup is documented here:
 - `Containerizing SAP S/4HANA Systems with Docker <https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243>`__
 
 .. note::
+
   The SAP Docker image is Intel based and community supported.
   If you are using a M-series Apple processor you must use an emulator: 
   `M-series Apple Chip MacBooks and Abap Platform Trial containers using Docker and Podman <https://community.sap.com/t5/technology-blog-posts-by-members/m-series-apple-chip-macbooks-and-abap-platform-trial-containers-using/ba-p/13593215>`__.
@@ -39,7 +40,11 @@ The SAP container and setup is documented here:
   Docker
 **********
 
-Download Docker Image
+.. note::
+  
+  Everything related to Docker will be accesed through the CLI.
+
+Download SAP Image
 =====================
 
 .. code:: bash
@@ -74,11 +79,16 @@ And be verified in the filesystem.
   :align: left
   :width: 580 px
 
-You can resize and run again.
+You can resize and run the :code:`docker pull` again.
 
 .. code:: bash
 
   pct resize 100 rootfs 100G
+
+.. note::
+
+  The SAP recommendation for the contaimer is minimum 150GB, 
+  and you can resize while the container is running.
 
 The :code:`docker pull` have used up approximately 54GB disk space.
 
