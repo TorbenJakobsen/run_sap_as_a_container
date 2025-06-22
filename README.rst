@@ -83,6 +83,14 @@ The following screenshot is after the Docker image was pulled.
  
 Everything related to Docker will be accessed through the CLI.
 
+You can verify by creating a https://httpbin.org/ container
+
+.. code:: bash
+
+  docker run -p 80:80 kennethreitz/httpbin
+
+Determine the IP address by calling :code:`ip a` and opening a browser with port 80 (see above run)
+
 Download SAP Image
 =====================
 
