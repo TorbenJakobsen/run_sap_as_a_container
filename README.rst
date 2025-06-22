@@ -141,6 +141,14 @@ You can resize and run the :code:`docker pull` again.
 
   pct resize 100 rootfs 100G
 
+Just for reference. Here is how to add to a VM:
+
+.. code:: bash
+
+  pct resize 101 scsi0 +30G
+
+
+
 The SAP recommendation for the contaimer is minimum 170GB, 
 and you can resize while the container is running.
 
