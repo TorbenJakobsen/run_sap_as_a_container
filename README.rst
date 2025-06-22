@@ -58,7 +58,7 @@ Linux
 
 - 4 CPUs
 - 16GB RAM
-- 150GB Disk
+- 170GB Disk
 
 The documentation also mentions macOS requirements.
 
@@ -90,7 +90,14 @@ Download SAP Image
 .. code:: bash
 
   sudo docker pull sapse/abap-cloud-developer-trial:ABAPTRIAL_2022_SP01
- 
+
+The image was recently updated (and disk requirement was bumped 150->170GB).
+
+.. code:: bash
+
+  sudo docker pull sapse/abap-cloud-developer-trial:2023
+
+
 You *must* include a tag as :code:`:latest` is not supported.
 
 This can take a *long* time as the :code:`docker pull` will download and extract ~58GB.
