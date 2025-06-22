@@ -155,8 +155,6 @@ Just for reference. Here is how to add to a VM:
 
   pct resize 101 scsi0 +30G
 
-
-
 The SAP recommendation for the contaimer is minimum 170GB, 
 and you can resize while the container is running.
 
@@ -185,8 +183,10 @@ From https://hub.docker.com/r/sapse/abap-cloud-developer-trial::
   
   docker run --stop-timeout 3600 -i --name a4h -h vhcala4hci -p 3200:3200 -p 3300:3300 -p 8443:8443 -p 30213:30213 -p 50000:50000 -p 50001:50001 sapse/abap-cloud-developer-trial:<TAGNAME> -skip-limits-check
 
-The :code:`<TAGNAME>` should be replaced with :code:`2023`
-and add :code:`-agree-to-sap-license`.
+The following changes shoudl be made:
+- :code:`<TAGNAME>` should be replaced with :code:`2023`
+- add :code:`-agree-to-sap-license`
+- add :code:`--sysctl kernel.shmmni=32768` to remove a limit nag
 
 .. code:: bash
   
