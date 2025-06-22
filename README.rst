@@ -99,10 +99,10 @@ The image was recently updated (and disk requirement was bumped 150->170GB).
 
 .. image:: ./media/docker_images_2023.png
   :align: left
-  :width: 800 px
+  :width: 840 px
 
-To get rid of the mage tagged :code:`ABAPTRIAL_2022_SP01`,
-find the GUID (:code:`ea090f8a6120`) and run the following command:
+To get rid of the image tagged :code:`ABAPTRIAL_2022_SP01`,
+find the IMAGE ID (:code:`ea090f8a6120`) and run the following command:
 
 .. code:: bash
 
