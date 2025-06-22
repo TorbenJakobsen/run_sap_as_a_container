@@ -97,8 +97,18 @@ The image was recently updated (and disk requirement was bumped 150->170GB).
 
   sudo docker pull sapse/abap-cloud-developer-trial:2023
 
+.. image:: ./media/docker_images_2023.png
+  :align: left
+  :width: 800 px
 
-You *must* include a tag as :code:`:latest` is not supported.
+To get rid of the mage tagged :code:`ABAPTRIAL_2022_SP01`,
+find the GUID (:code:`ea090f8a6120`) and run the following command:
+
+.. code:: bash
+
+  docker image rm ea090f8a6120
+
+When pulling you *must* include a tag as :code:`:latest` is not supported.
 
 This can take a *long* time as the :code:`docker pull` will download and extract ~58GB.
 If you are on a slow connection, you should check your power settings,
