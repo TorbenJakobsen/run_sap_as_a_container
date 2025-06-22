@@ -17,9 +17,8 @@ I will be using `Proxmox VE <https://www.proxmox.com/>`__ as hypervisor.
 Proxmox natively supports `LXC <https://en.wikipedia.org/wiki/LXC>`__ containers (*not* Docker).
 A comparison is available here: https://www.docker.com/blog/lxc-vs-docker/.
 
-To run a Docker container I will use a 
+To run a Docker container I will use a prepared
 LXC `container <https://github.com/TorbenJakobsen/run-docker-in-proxmox-lxc-container>`__
-*template* 
 with needed packages (``curl`` and ``docker``).
 
 *******
