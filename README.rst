@@ -142,7 +142,7 @@ You can resize and run the :code:`docker pull` again.
 
   pct resize 100 rootfs 100G
 
-The SAP recommendation for the contaimer is minimum 150GB, 
+The SAP recommendation for the contaimer is minimum 170GB, 
 and you can resize while the container is running.
 
 The :code:`docker pull` have used up approximately 54GB disk space.
@@ -163,6 +163,20 @@ And used Docker system resources more generally
   :align: left
   :width: 500 px
 
+Running the Docke Image
+=======================
+
+From https://hub.docker.com/r/sapse/abap-cloud-developer-trial
+
+.. code:: bash
+  
+  docker run --stop-timeout 3600 -i --name a4h -h vhcala4hci -p 3200:3200 -p 3300:3300 -p 8443:8443 -p 30213:30213 -p 50000:50000 -p 50001:50001 sapse/abap-cloud-developer-trial:<TAGNAME> -skip-limits-check
+
+The :code:`<TAGNAME>` should be replaced with :code:`2023` for our use.
+
+.. code:: bash
+  
+  docker run --stop-timeout 3600 -i --name a4h -h vhcala4hci -p 3200:3200 -p 3300:3300 -p 8443:8443 -p 30213:30213 -p 50000:50000 -p 50001:50001 sapse/abap-cloud-developer-trial:2023 -skip-limits-check
 
 *********
   Notes
