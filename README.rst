@@ -156,5 +156,5 @@ Docker Desktop
 
 #. Docker Desktop is a *licensed* product, and is *not* compliant with enterprise use or large teams.
 #. Docker CLI and various tools are FOSS -- still; please observe the licenses.
-#. I will only use Docker CLI as it gives me the most freedom and options (and... it is the only option while inside a container).
+#. I will only use Docker CLI as it gives me the most freedom and options (and... it is the simplest option while inside a container).
 
