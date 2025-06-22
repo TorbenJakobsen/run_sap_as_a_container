@@ -184,7 +184,7 @@ and add :code:`-agree-to-sap-license`.
 Docker Desktop 
 ==============
 
-#. Docker Desktop is a *licensed* product, and is *not* compliant with enterprise use or large teams.
+#. Docker Desktop is a *licensed* product, with a free tier for personal use; observe the license.
 #. Docker CLI and various tools are FOSS -- still; please observe the licenses.
 #. I will only use Docker CLI as it gives me the most freedom and options (and... it is the simplest option while inside a container).
 
