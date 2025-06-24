@@ -197,13 +197,13 @@ Then the container will start.
 
 .. image:: ./media/docker_run_start.png
   :align: left
-  :width: 640 px
+  :width: 800 px
 
 It will take some minuttes to complete spooling up.
 
 .. image:: ./media/docker_run_ready.png
   :align: left
-  :width: 640 px
+  :width: 800 px
 
 
 *********
