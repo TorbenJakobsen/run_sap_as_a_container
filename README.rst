@@ -193,6 +193,19 @@ The following changes should be made:
   
   docker run --stop-timeout 3600 -i --name a4h -h vhcala4hci -p 3200:3200 -p 3300:3300 -p 8443:8443 -p 30213:30213 -p 50000:50000 -p 50001:50001 sapse/abap-cloud-developer-trial:2023 -skip-limits-check -agree-to-sap-license
 
+Then the container will start.
+
+.. image:: ./media/docker_run_start.png
+  :align: left
+  :width: 640 px
+
+It will take some minuttes to complete spooling up.
+
+.. image:: ./media/docker_run_ready.png
+  :align: left
+  :width: 640 px
+
+
 *********
   Notes
 *********
