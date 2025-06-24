@@ -91,8 +91,8 @@ You can verify by creating a https://httpbin.org/ container
 
 Determine the IP address by calling :code:`ip a` and opening a browser with port 80 (see above run)
 
-Download SAP Image
-=====================
+Download SAP Docker Image
+=========================
 
 .. code:: bash
 
@@ -176,14 +176,15 @@ And used Docker system resources more generally
   :align: left
   :width: 500 px
 
-Running the Docke Image
-=======================
+Running the Docker Image
+========================
 
 From https://hub.docker.com/r/sapse/abap-cloud-developer-trial::
   
   docker run --stop-timeout 3600 -i --name a4h -h vhcala4hci -p 3200:3200 -p 3300:3300 -p 8443:8443 -p 30213:30213 -p 50000:50000 -p 50001:50001 sapse/abap-cloud-developer-trial:<TAGNAME> -skip-limits-check
 
-The following changes shoudl be made:
+The following changes should be made:
+
 - :code:`<TAGNAME>` should be replaced with :code:`2023`
 - add :code:`-agree-to-sap-license`
 - add :code:`--sysctl kernel.shmmni=32768` to remove a limit nag
