@@ -4,22 +4,10 @@
 
 The main components are:
 
-- Proxmox LXC Container
 - Docker CLI and runtime
 - SAP Docker Image
 
-***********
-  Proxmox
-***********
 
-I will be using `Proxmox VE <https://www.proxmox.com/>`__ as hypervisor.
-
-Proxmox natively supports `LXC <https://en.wikipedia.org/wiki/LXC>`__ containers (*not* Docker).
-A comparison is available here: https://www.docker.com/blog/lxc-vs-docker/.
-
-To run a Docker container I will use a
-`prepared <https://github.com/TorbenJakobsen/run-docker-in-proxmox-lxc-container>`__
-LXC container with needed packages (``curl`` and ``docker``).
 
 *******
   SAP
@@ -57,25 +45,9 @@ Linux
 
 - 4 CPUs
 - 16GB RAM
-- 170GB Disk
+- 150GB Disk
 
 The documentation also mentions macOS requirements.
-
-LXC Container
-=============
-
-The container has been created with:
-
-- 6 CPUs
-- 48GB RAM
-- 8GB Swap
-- 200GB Disk
-
-The following screenshot is after the Docker image was pulled.
-
-.. image:: ./media/lxc_container_size.png
-  :align: left
-  :width: 380 px
 
 **********
   Docker
@@ -216,4 +188,12 @@ Docker Desktop
 #. Docker Desktop is a *licensed* product, with a free tier for personal use; observe the license.
 #. Docker CLI and various tools are FOSS -- still; please observe the licenses.
 #. I will only use Docker CLI as it gives me the most freedom and options (and... it is the simplest option while inside a container).
+
+
+************
+  Makefile
+************
+
+
+
 
