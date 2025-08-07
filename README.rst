@@ -178,6 +178,31 @@ It will take some minuttes to complete spooling up.
   :width: 800 px
 
 
+**********
+  Client
+**********
+
+TODO 
+
+You can access the server using  abrowser or SAP GUI (Business Client?) TODO
+
+To download a current version of the BC you need an s-user with the proper download permissions and also accept the terms.
+
+You an alternatively download an (old) version.
+
+.. code:: bash
+
+  java -jar PlatinGUI-MacOSX-arm64-7.80rev7.jar
+
+The Java version does not run on current versions of Java 1.8 so you so can choose to containerize it.
+*There is a dependency on X11*,
+
+https://github.com/thalesvb/docker-platingui
+
+.. code:: bash
+
+  java -jar PlatinGUI-MacOSX-arm64-7.80rev7.jar
+
 *********
   Notes
 *********
