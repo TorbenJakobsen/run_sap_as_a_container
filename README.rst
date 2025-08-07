@@ -7,8 +7,6 @@ The main components are:
 - Docker CLI and runtime
 - SAP Docker Image
 
-
-
 *******
   SAP
 *******
@@ -37,8 +35,8 @@ Requirements
 From Docker Hub:
 `sapse/abap-cloud-developer-trial <https://hub.docker.com/r/sapse/abap-cloud-developer-trial>`__. 
 
-Please note: We highly recommend 32GB RAM to run the ABAP Platform Trial image. 
-The following requirements only cover the resources needed for the Docker environment itself.
+  Please note: We highly recommend 32GB RAM to run the ABAP Platform Trial image. 
+  The following requirements only cover the resources needed for the Docker environment itself.
 
 Linux
 -----
