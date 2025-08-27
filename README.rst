@@ -175,6 +175,40 @@ It will take some minuttes to complete spooling up.
   :align: left
   :width: 800 px
 
+Locate the container's GUID (can name be used?)
+
+.. code:: bash
+  
+  docker container ps
+
+Inspect the container and take note of network.
+
+.. code:: bash
+
+  docker container inspect e1c6f14897bf
+
+.. image:: ./media/docker_container_inspect.png
+  :align: left
+  :width: 800 px
+
+IP address is :code:`172.17.0.2`
+
+To verify the server is responding.
+Open a browser pointing to :code:`https://172.17.0.2:50001/`. (the port number depends on protocol http/https).
+
+.. image:: ./media/browser_server_is_alive.png
+  :align: left
+  :width: 800 px
+
+**SUCCESS**
+
+When stopping wait ---
+
+make stop ?
+
+.. image:: ./media/container_stop.png
+  :align: left
+  :width: 800 px
 
 **********
   Client

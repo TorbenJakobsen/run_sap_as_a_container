@@ -31,3 +31,8 @@ stop:
 .PHONY: license
 license:
 	docker exec -it a4h less /SAP_COMMUNITY_DEVELOPER_License
+
+
+.PHONY: code
+code:
+	code .
