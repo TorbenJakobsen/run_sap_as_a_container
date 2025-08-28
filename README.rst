@@ -45,7 +45,7 @@ Linux
 - 16GB RAM
 - 150GB Disk
 
-The documentation also mentions macOS requirements.
+The documentation also mentions macOS and Windows requirements.
 
 **********
   Docker
@@ -53,7 +53,7 @@ The documentation also mentions macOS requirements.
  
 Everything related to Docker will be accessed through the CLI.
 
-You can verify by creating a https://httpbin.org/ container
+You can verify by creating a https://httpbin.org/ container:
 
 .. code:: bash
 
@@ -99,7 +99,8 @@ so your workstation does not risk going to hibernate mode due to inaction.
   :align: left
   :width: 700 px
 
-If you see "disk quota exceeded" (this screenshot is from a 8GB LXC container hosting Docker).
+If you see "disk quota exceeded" 
+(this screenshot is from a 8GB LXC container hosting Docker not related to this project).
 
 .. image:: ./media/disk_quota_exceeded.png
   :align: left
@@ -112,9 +113,6 @@ And also be seen in the filesystem.
   :width: 580 px
 
 You will need more disk space and run the :code:`docker pull` again.
-
-The SAP recommendation for the contaimer is minimum 170GB, 
-and you can resize while the container is running.
 
 The :code:`docker pull` have used up approximately 54GB disk space.
 
