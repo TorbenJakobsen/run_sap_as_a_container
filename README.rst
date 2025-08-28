@@ -19,7 +19,7 @@ About
   It is extensively pre-configured with SAP Fiori launchpad, SAP Cloud Connector, 
   pre-configured backend /frontend connections, roles, and sample applications.
 
-The SAP container and setup is documented here:
+The official SAP container and setup is documented here:
 
 - `ABAP Cloud Developer Trial 2022 Available Now <https://community.sap.com/t5/technology-blogs-by-sap/abap-cloud-developer-trial-2022-available-now/ba-p/13598069>`__
 - `Containerizing SAP S/4HANA Systems with Docker <https://community.sap.com/t5/enterprise-resource-planning-blogs-by-sap/containerizing-sap-s-4hana-systems-with-docker/ba-p/13581243>`__
