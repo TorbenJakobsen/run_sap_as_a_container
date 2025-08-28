@@ -53,13 +53,13 @@ The documentation also mentions macOS and Windows requirements.
  
 Everything related to Docker will be accessed through the CLI.
 
-You can verify by creating a https://httpbin.org/ container:
+You can verify the docker installation by creating a https://httpbin.org/ container:
 
 .. code:: bash
 
   docker run -p 80:80 kennethreitz/httpbin
 
-Specifically for httpbin you can enter the container,
+Specifically for httpbin you can enter the container (TODO),
 and determine the IP address by calling :code:`ip a`.
 Now open a browser with port :code:`80` (see :code:`docker run` above).
 
