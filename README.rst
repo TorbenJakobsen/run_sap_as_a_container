@@ -70,12 +70,6 @@ Download (pull) SAP Docker Image
 
 .. code:: bash
 
-  sudo docker pull sapse/abap-cloud-developer-trial:ABAPTRIAL_2022_SP01
-
-The image was recently updated (and disk requirement was bumped 150->170GB).
-
-.. code:: bash
-
   sudo docker pull sapse/abap-cloud-developer-trial:2023
 
 .. image:: ./media/docker_images_2023.png
