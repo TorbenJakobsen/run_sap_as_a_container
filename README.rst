@@ -65,8 +65,8 @@ Now open a browser with port :code:`80` (see run above).
 
 The ABAP trial does not have :code:`ip` installed so the IP address in determined in another way (see later).
 
-Download SAP Docker Image
-=========================
+Download (pull) SAP Docker Image
+================================
 
 .. code:: bash
 
