@@ -94,7 +94,7 @@ so your workstation does not risk hibernating due to inaction.
   :width: 700 px
 
 If you see "disk quota exceeded" 
-(this screenshot is from a 8GB LXC container hosting Docker not related to this project).
+(this example screenshot using a 8GB file system).
 
 .. image:: ./media/disk_quota_exceeded.png
   :align: left
