@@ -59,7 +59,11 @@ You can verify by creating a https://httpbin.org/ container
 
   docker run -p 80:80 kennethreitz/httpbin
 
-Determine the IP address by calling :code:`ip a` and opening a browser with port 80 (see above run)
+Specifically for httpbin you can enter the container,
+and determine the IP address by calling :code:`ip a`.
+Now open a browser with port :code:`80` (see run above).
+
+The ABAP trial does not have :code:`ip` installed so the IP address in determined in another way (see later).
 
 Download SAP Docker Image
 =========================
