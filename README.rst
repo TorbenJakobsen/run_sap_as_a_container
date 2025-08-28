@@ -94,7 +94,7 @@ so your workstation does not risk hibernating due to inaction.
   :width: 700 px
 
 If you see "disk quota exceeded" 
-(this example screenshot using a 8GB file system).
+(this example screenshot is using a 8GB file system).
 
 .. image:: ./media/disk_quota_exceeded.png
   :align: left
@@ -129,7 +129,7 @@ And used Docker system resources more generally
 Running the Docker Image
 ========================
 
-From https://hub.docker.com/r/sapse/abap-cloud-developer-trial::
+From https://hub.docker.com/r/sapse/abap-cloud-developer-trial:
   
   docker run --stop-timeout 3600 -i --name a4h -h vhcala4hci -p 3200:3200 -p 3300:3300 -p 8443:8443 -p 30213:30213 -p 50000:50000 -p 50001:50001 sapse/abap-cloud-developer-trial:<TAGNAME> -skip-limits-check
 
@@ -176,8 +176,10 @@ Inspect the container and take note of network.
 | It is possible to set the IP address or to define a docker network, but you risk address collisions (TODO).
 |
 
-To verify the server is responding.
-Open a browser pointing to :code:`https://172.17.0.2:50001/`. (the port number depends on protocol: http/https).
+| To verify the server is responding.
+| Open a browser pointing to :code:`https://172.17.0.2:50001/`
+  (the port number depends on protocol: http/https).
+|
 
 .. image:: ./media/browser_server_is_alive.png
   :align: left
@@ -185,9 +187,9 @@ Open a browser pointing to :code:`https://172.17.0.2:50001/`. (the port number d
 
 **SUCCESS**
 
-When stopping wait ---
+When stopping wait --- TODO
 
-make stop ?
+make stop ? TODO
 
 .. image:: ./media/container_stop.png
   :align: left
@@ -199,17 +201,17 @@ make stop ?
 
 TODO 
 
-You can access the server using  abrowser or SAP GUI (Business Client?) TODO
+You can access the server using  a browser or SAP GUI (Business Client?) TODO
 
-To download a current version of the BC you need an s-user with the proper download permissions and also accept the terms.
+To download a *current* version of the BC you need an s-user with the proper download permissions and also accept the terms.
 
-You an alternatively download an (old) version.
+You can alternatively download an (old) version.
 
 .. code:: bash
 
   java -jar PlatinGUI-MacOSX-arm64-7.80rev7.jar
 
-The Java version does not run on current versions of Java 1.8 so you so can choose to containerize it.
+The Java version does not run on current versions of Java 1.8 so you so can choose to containerize it. TODO
 *There is a dependency on X11*,
 
 https://github.com/thalesvb/docker-platingui
@@ -226,14 +228,47 @@ Docker Desktop
 ==============
 
 #. Docker Desktop is a *licensed* product, with a free tier for personal use; observe the license.
-#. Docker CLI and various tools are FOSS -- still; please observe the licenses.
+#. Docker CLI and various tools are FOSS -- still; observe the licenses.
 #. I will only use Docker CLI as it gives me the most freedom and options (and... it is the simplest option while inside a container).
-
 
 ************
   Makefile
 ************
 
+| I have created a :code:`Makefile` to do the heavy lifting.
+| The :code:`Makefile` has only been tested on a Fedora 42 box with 64GB RAM.
+|
 
+.. code:: text
 
+  .ONESHELL:
+  
+  .DEFAULT_GOAL := pull
+  
+  .PHONY: pull
+  pull: 
+  	sudo docker pull sapse/abap-cloud-developer-trial:2023
+  
+  .PHONY: setup
+  setup: 
+  	sudo sysctl vm.max_map_count=2147483647
+  	sudo sysctl fs.aio-max-nr=18446744073709551615
+  
+  .PHONY: run
+  run:
+  	docker run --sysctl kernel.shmmni=32768 --stop-timeout 3600 -it --name a4h -h vhcala4hci sapse/abap-cloud-developer-trial:2023 
+  
+  .PHONY: start
+  start:
+  	docker start -ai a4h
+  
+  .PHONY: stop
+  stop:
+  	docker stop -t 7200 a4h
+    
+  .PHONY: license
+  license:
+  	docker exec -it a4h less /SAP_COMMUNITY_DEVELOPER_License
 
+The commands should be recognizable from the above text.  
+  
