@@ -171,7 +171,10 @@ Inspect the container and take note of network.
   :align: left
   :width: 800 px
 
-Here IP address is :code:`172.17.0.2`
+| Here IP address is :code:`172.17.0.2`
+| Note the IP address is subject to change.
+| It is possible to set the IP address or to define a docker network, but you risk address collisions (TODO).
+|
 
 To verify the server is responding.
 Open a browser pointing to :code:`https://172.17.0.2:50001/`. (the port number depends on protocol: http/https).
