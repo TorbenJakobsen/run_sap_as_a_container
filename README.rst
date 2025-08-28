@@ -83,11 +83,11 @@ find the IMAGE ID (:code:`ea090f8a6120`) and run the following command:
 
   docker image rm ea090f8a6120
 
-When pulling you *must* include a tag as :code:`:latest` is not supported by ABAP Trial (not all Docker images has this constraint).
+When pulling you *must* include a tag as the default :code:`:latest` is not supported by ABAP Trial (not all Docker images has this constraint).
 
 This can take a *long* time as the :code:`docker pull` will download and extract ~58GB.
 If you are on a slow connection, you should check your power settings,
-so your workstation does not risk going to hibernate mode due to inaction.
+so your workstation does not risk hibernating due to inaction.
 
 .. image:: ./media/docker_pull.png
   :align: left
@@ -171,7 +171,7 @@ Inspect the container and take note of network.
   :align: left
   :width: 800 px
 
-IP address is :code:`172.17.0.2`
+Here IP address is :code:`172.17.0.2`
 
 To verify the server is responding.
 Open a browser pointing to :code:`https://172.17.0.2:50001/`. (the port number depends on protocol: http/https).
