@@ -61,7 +61,7 @@ You can verify by creating a https://httpbin.org/ container:
 
 Specifically for httpbin you can enter the container,
 and determine the IP address by calling :code:`ip a`.
-Now open a browser with port :code:`80` (see run above).
+Now open a browser with port :code:`80` (see :code:`docker run` above).
 
 The ABAP trial does not have :code:`ip` installed so the IP address is determined in another way (see later).
 
