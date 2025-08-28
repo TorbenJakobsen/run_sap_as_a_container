@@ -177,7 +177,7 @@ Inspect the container and take note of network.
 |
 
 | To verify the server is responding.
-| Open a browser pointing to :code:`https://172.17.0.2:50001/` (the port number depends on protocol: http/https).
+| Open a browser pointing to :code:`https://172.17.0.2:50001/` (the port number depends on protocol: http/https).
 |
 
 .. image:: ./media/browser_server_is_alive.png
