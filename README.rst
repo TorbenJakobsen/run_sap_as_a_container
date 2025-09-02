@@ -28,6 +28,10 @@ Additonal community documentation is here:
 
 - `SAP on a Mini PC - my experience with the ABAP Cloud Developer Trial <https://community.sap.com/t5/technology-blog-posts-by-members/sap-on-a-mini-pc-my-experience-with-the-abap-cloud-developer-trial/ba-p/13882502>`__
 
+
+TODO Check YT for client installation:
+`*2023* Install an SAP ABAP Trial System The EASY Way | ABAP Platform Trial 1909 <https://youtu.be/vfqb-NGD3Io?si=aia-vT7eSvC9B0Ut>`__
+
 The SAP Docker image is Intel based and community supported.
 If you are using a M-series Apple processor you must use an emulator: 
 `M-series Apple Chip MacBooks and Abap Platform Trial containers using Docker and Podman <https://community.sap.com/t5/technology-blog-posts-by-members/m-series-apple-chip-macbooks-and-abap-platform-trial-containers-using/ba-p/13593215>`__.
