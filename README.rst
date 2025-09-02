@@ -202,6 +202,17 @@ make stop ? TODO
   :align: left
   :width: 800 px
 
+
+****************
+  Verification
+****************
+
+To open the WebGUI itself as a replacement for SAPGUI, 
+the URL is  :code:`http://<host>:<port>/sap/bc/gui/sap/its/webgui`.
+
+So if using :code:`https` (-> 50001) an example is 
+:code:`https://172.17.0.2:50001/sap/bc/gui/sap/its/webgui`.
+
 **********
   Client
 **********
